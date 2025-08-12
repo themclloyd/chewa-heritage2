@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Chewa Heritage Malawi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center group">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-r from-green-700 to-green-800 flex items-center justify-center text-white font-bold text-xl transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="ml-3">
+                            <span class="title-font text-xl font-bold text-green-800">Chewa Heritage</span>
+                            <div class="text-xs text-green-600 font-medium">Malawi</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Home</a>
+                    <a href="culture.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Culture</a>
+                    <a href="history.html" class="nav-link text-green-800 hover:text-green-600 font-medium">History</a>
+                    <a href="traditions.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Traditions</a>
+                    <a href="gallery.html" class="nav-link text-green-600 font-bold">Gallery</a>
+                    <a href="donate.html" class="btn btn-donate ml-4">
+                        <i class="fas fa-heart mr-2"></i>Donate
+                    </a>
+                </div>
+                
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-green-800 hover:text-green-600 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <div class="space-y-3">
+                <a href="../index.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Home</a>
+                <a href="culture.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Culture</a>
+                <a href="history.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">History</a>
+                <a href="traditions.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Traditions</a>
+                <a href="gallery.html" class="block py-3 px-4 bg-green-100 text-green-800 rounded-lg font-bold">Gallery</a>
+                <a href="donate.html" class="block py-3 px-4 bg-red-600 text-white rounded-lg font-semibold">
+                    <i class="fas fa-heart mr-2"></i>Donate
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-subpage">
+        <div class="hero-bg">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-900 via-green-800 to-green-700 opacity-95"></div>
+            <div class="absolute inset-0">
+                <img src="../images/gallery/1754503178516.jpg" 
+                     alt="Chewa cultural heritage" 
+                     class="w-full h-full object-cover animate-ken-burns opacity-50">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="title-font text-white mb-6">Cultural Gallery</h1>
+            <p class="text-xl text-green-100 max-w-3xl mb-8">
+                Authentic photography showcasing the living traditions of the Chewa people, 
+                shared with community consent and deep respect for sacred practices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sacred Notice -->
+    <section class="py-8 bg-yellow-50">
+        <div class="container">
+            <div class="sacred-notice text-center">
+                <i class="fas fa-camera text-2xl mb-3 text-green-700"></i>
+                <h3 class="font-bold text-green-800 mb-2">Photography Ethics</h3>
+                <p class="text-green-700">
+                    All images are shared with community consent and respect for the sacred nature of Chewa traditions. 
+                    Some ceremonies are not photographed to preserve their spiritual integrity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-8 bg-white">
+        <div class="container">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all" data-filter="all">
+                    All Images
+                </button>
+                <button class="filter-btn bg-green-100 text-green-800 hover:bg-green-200 px-6 py-3 rounded-full font-semibold transition-all" data-filter="ceremonies">
+                    Ceremonies
+                </button>
+                <button class="filter-btn bg-green-100 text-green-800 hover:bg-green-200 px-6 py-3 rounded-full font-semibold transition-all" data-filter="masks">
+                    Masks & Crafts
+                </button>
+                <button class="filter-btn bg-green-100 text-green-800 hover:bg-green-200 px-6 py-3 rounded-full font-semibold transition-all" data-filter="community">
+                    Community
+                </button>
+                <button class="filter-btn bg-green-100 text-green-800 hover:bg-green-200 px-6 py-3 rounded-full font-semibold transition-all" data-filter="kulamba">
+                    Kulamba
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section-padding bg-green-50">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+                <!-- Gule Wamkulu Dancers -->
+                <div class="gallery-item card card-hover" data-category="ceremonies">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/Gule_wamkulu-dancers.jpg" 
+                             alt="Gule Wamkulu dancers performing sacred ritual" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-mask mr-1"></i>Ceremonies
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Gule Wamkulu Performance</h3>
+                        <p class="text-gray-600 text-sm">Sacred ritual dance by Nyau brotherhood members, Central Region, Malawi</p>
+                    </div>
+                </div>
+
+                <!-- Traditional Mask -->
+                <div class="gallery-item card card-hover" data-category="masks">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/Chewa_mask_-_Malawi.jpg" 
+                             alt="Traditional Chewa Nyau mask from Malawi" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-hammer mr-1"></i>Masks & Crafts
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Nyau Ceremonial Mask</h3>
+                        <p class="text-gray-600 text-sm">Hand-carved wooden mask representing ancestral spirits, Malawi</p>
+                    </div>
+                </div>
+
+                <!-- Cultural Performance -->
+                <div class="gallery-item card card-hover" data-category="ceremonies">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/1754503178516.jpg" 
+                             alt="Chewa cultural performance and gathering" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-green-100 text-green-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-music mr-1"></i>Ceremonies
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Cultural Performance</h3>
+                        <p class="text-gray-600 text-sm">Traditional music and dance gathering, Central Region, Malawi</p>
+                    </div>
+                </div>
+
+                <!-- Community Gathering -->
+                <div class="gallery-item card card-hover" data-category="community">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/Sosola_222.jpg" 
+                             alt="Chewa community gathering and celebration" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-users mr-1"></i>Community
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Community Celebration</h3>
+                        <p class="text-gray-600 text-sm">Traditional gathering strengthening social bonds, Malawi</p>
+                    </div>
+                </div>
+
+                <!-- Kulamba Ceremony -->
+                <div class="gallery-item card card-hover" data-category="kulamba">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/the-kulamba-traditional-ceremony-of-the-chewa-people-from-zambia-mozambique-and-malawi-held-annually-on-the-last-saturday-in-august-to-pay-homage-to-2XE7056.jpg" 
+                             alt="Kulamba Traditional Ceremony participants" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-purple-100 text-purple-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-crown mr-1"></i>Kulamba
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Kulamba Ceremony</h3>
+                        <p class="text-gray-600 text-sm">Annual homage to Kalonga Gawa Undi, Mkaika, Katete (Malawi delegation)</p>
+                    </div>
+                </div>
+
+                <!-- Traditional Crafts -->
+                <div class="gallery-item card card-hover" data-category="masks">
+                    <div class="aspect-w-4 aspect-h-3">
+                        <img src="../images/gallery/Gule_wamkulu-dancers.jpg" 
+                             alt="Traditional Chewa crafts and masks" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-sm font-semibold rounded-full mb-3">
+                            <i class="fas fa-tools mr-1"></i>Masks & Crafts
+                        </span>
+                        <h3 class="title-font text-green-800 mb-2">Traditional Craftsmanship</h3>
+                        <p class="text-gray-600 text-sm">Master craftsmen creating ceremonial items, Central Region, Malawi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="title-font text-green-800 mb-6">Help Us Document More</h2>
+                <p class="text-large text-gray-600 mb-8">
+                    Your support enables us to respectfully document and preserve Chewa cultural practices 
+                    for future generations while honoring their sacred nature.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="card p-6 text-center">
+                        <i class="fas fa-camera text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">$50</h3>
+                        <p class="text-gray-600 text-sm">Funds one documentation session</p>
+                    </div>
+                    <div class="card p-6 text-center border-2 border-green-300">
+                        <i class="fas fa-archive text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">$200</h3>
+                        <p class="text-gray-600 text-sm">Supports digital archive expansion</p>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <i class="fas fa-book text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">$500</h3>
+                        <p class="text-gray-600 text-sm">Creates educational materials</p>
+                    </div>
+                </div>
+                
+                <a href="donate.html" class="btn btn-donate text-lg px-8 py-4">
+                    <i class="fas fa-heart mr-2"></i>Support Documentation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-green-100 py-12">
+        <div class="container">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-green-600 to-green-700 flex items-center justify-center text-white">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="ml-3">
+                        <span class="title-font text-xl font-bold text-yellow-300">Chewa Heritage</span>
+                        <div class="text-sm text-green-300">Malawi</div>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="../index.html" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="culture.html" class="hover:text-yellow-300 transition-colors">Culture</a>
+                    <a href="history.html" class="hover:text-yellow-300 transition-colors">History</a>
+                    <a href="traditions.html" class="hover:text-yellow-300 transition-colors">Traditions</a>
+                    <a href="donate.html" class="hover:text-yellow-300 transition-colors">Donate</a>
+                </div>
+                <p class="text-green-300">&copy; 2025 Chewa Heritage Malawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="relative max-w-6xl w-full">
+            <button id="lightbox-close" class="absolute -top-12 right-0 text-white text-4xl hover:text-yellow-300 transition-colors duration-300">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-image" src="" alt="" class="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl">
+            <div id="lightbox-content" class="mt-6 text-white text-center">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-green-600', 'text-white');
+                    btn.classList.add('bg-green-100', 'text-green-800');
+                });
+                button.classList.add('active', 'bg-green-600', 'text-white');
+                button.classList.remove('bg-green-100', 'text-green-800');
+                
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('animate-fade-in-up');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.querySelector('h3').textContent;
+                const description = item.querySelector('p').textContent;
+                const category = item.querySelector('span').textContent;
+                
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                lightboxContent.innerHTML = `
+                    <div class="max-w-2xl mx-auto">
+                        <div class="mb-4">${category}</div>
+                        <h3 class="text-2xl font-bold mb-3">${title}</h3>
+                        <p class="text-gray-300">${description}</p>
+                    </div>
+                `;
+                
+                lightbox.classList.remove('hidden');
+                lightbox.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

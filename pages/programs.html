@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Chewa Heritage Malawi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center group">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-r from-green-700 to-green-800 flex items-center justify-center text-white font-bold text-xl transform transition-transform duration-300 group-hover:scale-110 shadow-lg">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="ml-3">
+                            <span class="title-font text-xl font-bold text-green-800">Chewa Heritage</span>
+                            <div class="text-xs text-green-600 font-medium">Malawi</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Home</a>
+                    <a href="culture.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Culture</a>
+                    <a href="history.html" class="nav-link text-green-800 hover:text-green-600 font-medium">History</a>
+                    <a href="traditions.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Traditions</a>
+                    <a href="gallery.html" class="nav-link text-green-800 hover:text-green-600 font-medium">Gallery</a>
+                    <a href="programs.html" class="nav-link text-green-600 font-bold">Programs</a>
+                    <a href="donate.html" class="btn btn-donate ml-4">
+                        <i class="fas fa-heart mr-2"></i>Donate
+                    </a>
+                </div>
+                
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="text-green-800 hover:text-green-600 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <div class="space-y-3">
+                <a href="../index.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Home</a>
+                <a href="culture.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Culture</a>
+                <a href="history.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">History</a>
+                <a href="traditions.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Traditions</a>
+                <a href="gallery.html" class="block py-3 px-4 text-green-800 hover:bg-green-50 rounded-lg">Gallery</a>
+                <a href="programs.html" class="block py-3 px-4 bg-green-100 text-green-800 rounded-lg font-bold">Programs</a>
+                <a href="donate.html" class="block py-3 px-4 bg-red-600 text-white rounded-lg font-semibold">
+                    <i class="fas fa-heart mr-2"></i>Donate
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-subpage">
+        <div class="hero-bg">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-900 via-green-800 to-green-700 opacity-95"></div>
+            <div class="absolute inset-0">
+                <img src="../images/gallery/Sosola_222.jpg" 
+                     alt="Chewa community programs" 
+                     class="w-full h-full object-cover animate-ken-burns opacity-50">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="title-font text-white mb-6">Our Programs</h1>
+            <p class="text-xl text-green-100 max-w-3xl mb-8">
+                Community-driven initiatives preserving and sharing Chewa heritage 
+                through education, documentation, and cultural engagement.
+            </p>
+        </div>
+    </section>
+
+    <!-- Programs Grid -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Schools Outreach -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-school text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="title-font text-green-800 text-xl">Schools Outreach</h3>
+                            <p class="text-green-600 font-semibold">Cultural Education</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Bringing Chewa language and cultural education to schools across Malawi's Central Region. 
+                        Our programs help students connect with their heritage while excelling in modern education.
+                    </p>
+                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-blue-800 mb-2">Program Highlights</h4>
+                        <ul class="text-blue-700 text-sm space-y-1">
+                            <li>• Chichewa language workshops</li>
+                            <li>• Cultural storytelling sessions</li>
+                            <li>• Traditional craft demonstrations</li>
+                            <li>• Teacher training programs</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-green-600 font-semibold">$150 sponsors one school visit</span>
+                        <a href="donate.html" class="btn btn-primary">Support Education</a>
+                    </div>
+                </div>
+
+                <!-- Cultural Documentation -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-camera text-purple-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="title-font text-green-800 text-xl">Cultural Documentation</h3>
+                            <p class="text-green-600 font-semibold">Preserving Heritage</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Recording oral histories, traditional practices, and ceremonies with community consent. 
+                        Our respectful approach ensures sacred traditions are preserved appropriately.
+                    </p>
+                    <div class="bg-purple-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-purple-800 mb-2">Documentation Focus</h4>
+                        <ul class="text-purple-700 text-sm space-y-1">
+                            <li>• Elder interview sessions</li>
+                            <li>• Traditional craft techniques</li>
+                            <li>• Community ceremony recordings</li>
+                            <li>• Digital archive development</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-green-600 font-semibold">$300 funds documentation project</span>
+                        <a href="donate.html" class="btn btn-primary">Fund Documentation</a>
+                    </div>
+                </div>
+
+                <!-- Community Workshops -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-hands-helping text-amber-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="title-font text-green-800 text-xl">Community Workshops</h3>
+                            <p class="text-green-600 font-semibold">Hands-on Learning</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Hands-on learning experiences in traditional crafts, storytelling, and cultural practices. 
+                        Led by master craftsmen and cultural knowledge keepers.
+                    </p>
+                    <div class="bg-amber-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-amber-800 mb-2">Workshop Types</h4>
+                        <ul class="text-amber-700 text-sm space-y-1">
+                            <li>• Nyau mask carving sessions</li>
+                            <li>• Traditional pottery making</li>
+                            <li>• Storytelling and proverbs</li>
+                            <li>• Cultural music and dance</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-green-600 font-semibold">$75 sponsors one workshop</span>
+                        <a href="donate.html" class="btn btn-primary">Support Workshops</a>
+                    </div>
+                </div>
+
+                <!-- Youth Engagement -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="title-font text-green-800 text-xl">Youth Engagement</h3>
+                            <p class="text-green-600 font-semibold">Future Guardians</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Connecting young Chewa people with their heritage through mentorship, cultural activities, 
+                        and leadership development programs that bridge traditional and modern worlds.
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-lg mb-6">
+                        <h4 class="font-semibold text-green-800 mb-2">Youth Initiatives</h4>
+                        <ul class="text-green-700 text-sm space-y-1">
+                            <li>• Cultural mentorship programs</li>
+                            <li>• Youth leadership development</li>
+                            <li>• Heritage ambassador training</li>
+                            <li>• Inter-generational dialogue</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-green-600 font-semibold">$200 supports youth program</span>
+                        <a href="donate.html" class="btn btn-primary">Invest in Youth</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved -->
+    <section class="section-padding bg-green-50">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="title-font text-green-800 mb-6">Get Involved</h2>
+                <p class="text-large text-gray-600 mb-12">
+                    Join our community of supporters, volunteers, and cultural advocates
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="card p-6 text-center">
+                        <i class="fas fa-hand-holding-heart text-red-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">Donate</h3>
+                        <p class="text-gray-600 text-sm mb-4">Financial support for our programs and initiatives</p>
+                        <a href="donate.html" class="btn btn-donate w-full">Donate Now</a>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <i class="fas fa-hands-helping text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">Volunteer</h3>
+                        <p class="text-gray-600 text-sm mb-4">Share your skills and time with our community</p>
+                        <a href="#contact" class="btn btn-outline w-full">Join Us</a>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <i class="fas fa-handshake text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-green-800 mb-3">Partner</h3>
+                        <p class="text-gray-600 text-sm mb-4">Collaborate with us on cultural preservation</p>
+                        <a href="#contact" class="btn btn-outline w-full">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-green-800 text-white">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="title-font text-yellow-300 mb-4">Connect With Our Programs</h2>
+                    <p class="text-xl text-green-100">
+                        Ready to get involved? Reach out to learn more about our initiatives.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="title-font text-yellow-300 mb-6">Program Inquiries</h3>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-yellow-300 w-6 mr-3"></i>
+                                <span>programs@chewaheritage.mw</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-yellow-300 w-6 mr-3"></i>
+                                <span>+265 123 456 789</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-yellow-300 w-6 mr-3"></i>
+                                <span>Lilongwe, Central Region, Malawi</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-700 p-6 rounded-xl">
+                            <h4 class="font-bold text-yellow-300 mb-3">Office Hours</h4>
+                            <div class="space-y-2 text-green-100">
+                                <div class="flex justify-between">
+                                    <span>Monday - Friday</span>
+                                    <span>8:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday</span>
+                                    <span>9:00 AM - 2:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-700 p-8 rounded-2xl">
+                        <h3 class="title-font text-yellow-300 mb-6">Program Interest Form</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="form-label text-green-100">Full Name</label>
+                                <input type="text" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label text-green-100">Email Address</label>
+                                <input type="email" class="form-input" required>
+                            </div>
+                            <div>
+                                <label class="form-label text-green-100">Program Interest</label>
+                                <select class="form-input" required>
+                                    <option value="">Select a program</option>
+                                    <option value="schools">Schools Outreach</option>
+                                    <option value="documentation">Cultural Documentation</option>
+                                    <option value="workshops">Community Workshops</option>
+                                    <option value="youth">Youth Engagement</option>
+                                    <option value="volunteer">General Volunteering</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label text-green-100">How would you like to contribute?</label>
+                                <textarea class="form-input" rows="4" placeholder="Tell us about your skills, interests, or how you'd like to get involved..."></textarea>
+                            </div>
+                            <button type="submit" class="btn bg-yellow-500 text-green-800 hover:bg-yellow-400 w-full">
+                                <i class="fas fa-paper-plane mr-2"></i>Submit Interest
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-green-100 py-12">
+        <div class="container">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-r from-green-600 to-green-700 flex items-center justify-center text-white">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="ml-3">
+                        <span class="title-font text-xl font-bold text-yellow-300">Chewa Heritage</span>
+                        <div class="text-sm text-green-300">Malawi</div>
+                    </div>
+                </div>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="../index.html" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="culture.html" class="hover:text-yellow-300 transition-colors">Culture</a>
+                    <a href="history.html" class="hover:text-yellow-300 transition-colors">History</a>
+                    <a href="traditions.html" class="hover:text-yellow-300 transition-colors">Traditions</a>
+                    <a href="gallery.html" class="hover:text-yellow-300 transition-colors">Gallery</a>
+                    <a href="donate.html" class="hover:text-yellow-300 transition-colors">Donate</a>
+                </div>
+                <p class="text-green-300">&copy; 2025 Chewa Heritage Malawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

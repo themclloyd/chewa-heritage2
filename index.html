@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chewa Heritage - The Unbroken Legacy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#home">Chewa Heritage</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#culture" class="nav-link">Culture</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#programs" class="nav-link">Programs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#donate" class="btn btn-primary nav-donate-btn">Donate</a>
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fas fa-bars icon-open"></i>
+                <i class="fas fa-times icon-close"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="#culture" class="nav-link">Culture</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#donate" class="btn btn-primary">Donate</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home">
+        <div class="hero-bg">
+            <img src="images/gallery/Sosola_226.jpg" alt="Chewa Cultural Performance" loading="eager">
+        </div>
+        <div class="hero-content">
+            <h1>The Unbroken Legacy of the Chewa</h1>
+            <p class="subtitle">Journey into the heart of Malawi and discover a culture rich in tradition, art, and spirit. Preserve the legacy with us.</p>
+            <div class="hero-buttons">
+                <a href="#culture" class="btn btn-primary">Explore Our Culture</a>
+                <a href="#programs" class="btn btn-secondary">Our Initiatives</a>
+            </div>
+        </div>
+        <a href="#mission" class="hero-scroll-down">
+            Scroll Down
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Placeholder for other sections -->
+    <section id="mission">
+        <div class="container mission-container">
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>To preserve, promote, and perpetuate the rich cultural heritage of the Chewa people of Malawi. We are dedicated to creating a living repository of our traditions, stories, and art for future generations.</p>
+                <p>Through education, community engagement, and digital archiving, we aim to ensure the Unbroken Legacy of the Chewa continues to inspire and thrive.</p>
+            </div>
+            <div class="mission-values">
+                <h3>Core Values</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Authenticity & Respect</li>
+                    <li><i class="fas fa-check-circle"></i> Community & Collaboration</li>
+                    <li><i class="fas fa-check-circle"></i> Education & Empowerment</li>
+                    <li><i class="fas fa-check-circle"></i> Preservation & Innovation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="culture" class="culture-section">
+        <div class="container">
+            <h2>Discover Chewa Culture</h2>
+            <p class="section-subtitle">Explore the rich traditions and vibrant heritage of the Chewa people</p>
+            
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3>Gule Wamkulu</h3>
+                    <p>The Great Dance, a UNESCO-recognized tradition featuring elaborate masks and performances that embody ancestral spirits and moral teachings.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Life</h3>
+                    <p>Centered around the village structure, Chewa society emphasizes communal living, shared responsibilities, and collective celebrations.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Art & Craft</h3>
+                    <p>From intricate beadwork to pottery and basketry, Chewa artisans create beautiful functional art that carries cultural significance.</p>
+                </div>
+                
+                <div class="culture-card">
+                    <div class="culture-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Oral Traditions</h3>
+                    <p>Rich storytelling, proverbs, and folktales pass down wisdom, history, and cultural values through generations.</p>
+                </div>
+            </div>
+            
+            <div class="culture-cta">
+                <a href="#gallery" class="btn btn-primary">View Cultural Gallery</a>
+                <a href="#programs" class="btn btn-outline">Learn About Our Programs</a>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Cultural Gallery</h2>
+            <p class="section-subtitle">A visual journey through Chewa traditions, ceremonies, and daily life</p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ceremonies">Ceremonies</button>
+                <button class="filter-btn" data-filter="art">Art & Craft</button>
+                <button class="filter-btn" data-filter="dance">Dance & Music</button>
+                <button class="filter-btn" data-filter="daily">Daily Life</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Sample gallery items - replace with actual images from your collection -->
+                <div class="gallery-item" data-category="ceremonies">
+                    <img src="images/gallery/Chewa_mask_-_Malawi.jpg" alt="Traditional Chewa mask">
+                    <div class="gallery-overlay">
+                        <h3>Gule Wamkulu Mask</h3>
+                        <p>Ceremonial Dance</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="art">
+                    <img src="images/gallery/Chewa.jpg" alt="Chewa pottery">
+                    <div class="gallery-overlay">
+                        <h3>Traditional Pottery</h3>
+                        <p>Art & Craft</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="dance">
+                    <img src="images/gallery/Gule_wamkulu-dancers.jpg" alt="Dancers performing">
+                    <div class="gallery-overlay">
+                        <h3>Dance Performance</h3>
+                        <p>Gule Wamkulu</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="daily">
+                    <img src="images/gallery/Sosola_49.jpg" alt="Village life">
+                    <div class="gallery-overlay">
+                        <h3>Village Life</h3>
+                        <p>Daily Activities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="art">
+                    <img src="images/gallery/1754503178516.jpg" alt="Beadwork">
+                    <div class="gallery-overlay">
+                        <h3>Beadwork</h3>
+                        <p>Traditional Craft</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="ceremonies">
+                    <img src="images/gallery/1754503210151.jpg" alt="Cultural ceremony">
+                    <div class="gallery-overlay">
+                        <h3>Initiation Ceremony</h3>
+                        <p>Traditional Rites</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <a href="pages/gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <p class="section-subtitle">Empowering communities through cultural preservation and education</p>
+            
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Cultural Education</h3>
+                    <p>Interactive workshops and classes teaching Chewa language, traditional dances, and cultural practices to younger generations.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Language classes</li>
+                        <li><i class="fas fa-check-circle"></i> Dance workshops</li>
+                        <li><i class="fas fa-check-circle"></i> Cultural history</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="program-card featured">
+                    <div class="program-badge">Most Popular</div>
+                    <div class="program-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Outreach</h3>
+                    <p>Bringing cultural programs to rural communities and supporting local artisans and performers.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Village workshops</li>
+                        <li><i class="fas fa-check-circle"></i> Artisan support</li>
+                        <li><i class="fas fa-check-circle"></i> Cultural exchange</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Involved</a>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Oral History Project</h3>
+                    <p>Documenting and preserving the stories, songs, and wisdom of Chewa elders for future generations.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Elder interviews</li>
+                        <li><i class="fas fa-check-circle"></i> Digital archives</li>
+                        <li><i class="fas fa-check-circle"></i> Storytelling events</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Share Stories</a>
+                </div>
+            </div>
+            
+            <div class="programs-cta">
+                <p>Interested in our programs? We'd love to hear from you!</p>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===== DONATE SECTION ===== -->
+    <section id="donate" class="donate-section">
+        <div class="container">
+            <div class="donate-content">
+                <div class="donate-text">
+                    <h2>Support Our Mission</h2>
+                    <p>Your generous donation helps us preserve Chewa heritage for future generations. Every contribution makes a difference in our efforts to document, protect, and celebrate our rich cultural legacy.</p>
+                    
+                    <div class="donation-options">
+                        <button class="donation-amount" data-amount="25">$25</button>
+                        <button class="donation-amount" data-amount="50">$50</button>
+                        <button class="donation-amount" data-amount="100">$100</button>
+                        <button class="donation-amount" data-amount="250">$250</button>
+                        <div class="custom-amount">
+                            <span>$</span>
+                            <input type="number" id="custom-amount" placeholder="Other amount" min="1">
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary btn-donate">Donate Now</a>
+                    
+                    <div class="donation-security">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure payment processing</span>
+                    </div>
+                </div>
+                <div class="donate-image">
+                    <img src="images/gallery/Chewa_mask_-_Malawi.jpg" alt="Chewa Cultural Mask" class="donate-img">
+                    <div class="donate-impact">
+                        <div class="impact-item">
+                            <h4>500+</h4>
+                            <p>Cultural Artifacts Preserved</p>
+                        </div>
+                        <div class="impact-item">
+                            <h4>2,000+</h4>
+                            <p>Community Members Reached</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you. Reach out for inquiries, collaborations, or to learn more about our work.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Cultural Heritage Way<br>Lilongwe, Malawi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@chewaheritage.org">info@chewaheritage.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+265 123 456 789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer style="padding: 4rem 0; background: #2a3d33; color: white; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Chewa Heritage. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
