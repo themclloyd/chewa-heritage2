@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Discover and preserve the rich cultural heritage of the Chewa people. Explore traditions, events, and initiatives.">
+    <meta name="theme-color" content="#2a3d33">
     <title>Chewa Heritage - The Unbroken Legacy</title>
 
     <!-- Google Fonts -->
@@ -11,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css?v=1.1">
@@ -22,17 +24,17 @@
     <header class="site-header">
         <div class="header-container">
             <div class="logo">
-                <a href="#home">Chewa Heritage</a>
+                <a href="javascript:void(0);" data-target="home">Chewa Heritage</a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#culture" class="nav-link">Culture</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#programs" class="nav-link">Programs</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="javascript:void(0);" data-target="culture" class="nav-link">Culture</a></li>
+                    <li><a href="javascript:void(0);" data-target="gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="javascript:void(0);" data-target="programs" class="nav-link">Programs</a></li>
+                    <li><a href="javascript:void(0);" data-target="contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#donate" class="btn btn-primary nav-donate-btn">Donate</a>
+            <a href="javascript:void(0);" data-target="donate" class="btn btn-primary nav-donate-btn">Donate</a>
             <button class="menu-toggle" aria-label="Open menu">
                 <i class="fas fa-bars icon-open"></i>
                 <i class="fas fa-times icon-close"></i>
@@ -43,31 +45,34 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu">
         <ul>
-            <li><a href="#culture" class="nav-link">Culture</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#programs" class="nav-link">Programs</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#donate" class="btn btn-primary">Donate</a></li>
+            <li><a href="javascript:void(0);" data-target="culture" class="nav-link">Culture</a></li>
+            <li><a href="javascript:void(0);" data-target="gallery" class="nav-link">Gallery</a></li>
+            <li><a href="javascript:void(0);" data-target="programs" class="nav-link">Programs</a></li>
+            <li><a href="javascript:void(0);" data-target="contact" class="nav-link">Contact</a></li>
+            <li><a href="javascript:void(0);" data-target="donate" class="btn btn-primary">Donate</a></li>
         </ul>
     </div>
 
     <!-- ===== HERO SECTION ===== -->
-    <section id="home">
+    <section id="home" class="hero-section">
         <div class="hero-bg">
             <img src="images/gallery/Sosola_226.jpg" alt="Chewa Cultural Performance" loading="eager">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-content">
-            <h1>The Unbroken Legacy of the Chewa</h1>
-            <p class="subtitle">Journey into the heart of Malawi and discover a culture rich in tradition, art, and spirit. Preserve the legacy with us.</p>
-            <div class="hero-buttons">
-                <a href="#culture" class="btn btn-primary">Explore Our Culture</a>
-                <a href="#programs" class="btn btn-secondary">Our Initiatives</a>
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Unbroken Legacy of the Chewa</h1>
+                <p class="subtitle">Journey into the heart of Malawi and discover a culture rich in tradition, art, and spirit. Preserve the legacy with us.</p>
+                <div class="hero-buttons">
+                    <a href="javascript:void(0);" data-target="culture" class="btn btn-primary">Explore Our Culture</a>
+                    <a href="javascript:void(0);" data-target="programs" class="btn btn-secondary">Our Initiatives</a>
+                </div>
             </div>
+            <a href="#mission" class="hero-scroll-down">
+                Scroll Down
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-        <a href="#mission" class="hero-scroll-down">
-            Scroll Down
-            <i class="fas fa-chevron-down"></i>
-        </a>
     </section>
 
     <!-- Placeholder for other sections -->
@@ -129,11 +134,89 @@
             </div>
             
             <div class="culture-cta">
-                <a href="#gallery" class="btn btn-primary">View Cultural Gallery</a>
-                <a href="#programs" class="btn btn-outline">Learn About Our Programs</a>
+                <a href="javascript:void(0);" data-target="gallery" class="btn btn-primary">View Cultural Gallery</a>
+                <a href="javascript:void(0);" data-target="programs" class="btn btn-outline">Learn About Our Programs</a>
             </div>
         </div>
     </section>
+    
+    <!-- ===== NEWS & EVENTS ===== -->
+    <section id="news-events" class="news-events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>News & Events</h2>
+                <p class="section-subtitle">Stay updated with the latest happenings in the Chewa community</p>
+            </div>
+            
+            <div class="news-events-grid">
+                <!-- Latest News -->
+                <div class="news-section">
+                    <h3>Latest News</h3>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/gallery/WhatsApp Image 2025-08-15 at 07.24.29_67cbbb4f.jpg" alt="Chewa Mega Farm Launch" class="news-img">
+                        </div>
+                        <div class="news-card-content">
+                            <div class="news-date">August 15, 2024</div>
+                            <h4>Historic Launch of Chewa Mega Farm</h4>
+                            <p>The Kingdom of Chewa in Malawi has, over the past few days, witnessed a historic moment with the launch of its mega farm, which is a true testament to the power of collective effort and innovative irrigation. This initiative aims to enhance food security and create sustainable livelihoods for the community.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div class="events-section">
+                    <h3>Upcoming Events</h3>
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/gallery/Sosola_222.jpg" alt="Chewa Cultural Festival" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="event-day">24</span>
+                                <span class="event-month">AUG</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Chewa Cultural Festival 2024</h4>
+                                <p><i class="far fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Bingu International Convention Centre, Lilongwe</p>
+                                <a href="#" class="event-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/gallery/Sosola_226.jpg" alt="Traditional Dance Workshop" class="event-img">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-date">
+                                <span class="event-day">15</span>
+                                <span class="event-month">SEP</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Traditional Dance Workshop</h4>
+                                <p><i class="far fa-clock"></i> 10:00 AM - 2:00 PM</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Chewa Cultural Center, Blantyre</p>
+                                <a href="#" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter-cta">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest news and event updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
     <section id="gallery" class="gallery-section">
         <div class="container">
             <h2>Cultural Gallery</h2>
@@ -385,6 +468,31 @@
         </div>
     </footer>
 
+    <!-- Watermark -->
+    <a href="tel:+265993838160" class="watermark" title="Contact Designer">
+        themclloyd<br>+265 99 383 8160
+    </a>
+    
+    <!-- Modernizr for feature detection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+    <!-- Main JavaScript -->
     <script src="js/main.js"></script>
+    <script>
+        // Smooth scrolling for all navigation links
+        document.querySelectorAll('a[data-target]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80, // Adjust for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
